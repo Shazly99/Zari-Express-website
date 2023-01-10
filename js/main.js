@@ -252,7 +252,7 @@ sel.addEventListener('click', () => {
 
         $('a[href = "#home"]').text('الرئيسية');
         $('a[href = "#features"]').text('المميزات'); 
-        $('a[href = "#about"]').text('تعرف علينا');
+        $('a[href = "#about"]').text('   من نحن');
         $('a[href = "#get"]').text('الحصول على التطبيق');
         $('a[href = "#contact"]').text('تواصل معنا');
         $('a[href = "#blog"]').text('  مقالات');
@@ -260,7 +260,7 @@ sel.addEventListener('click', () => {
         /**last update add #contact and blog En nav  */
         $('a[href = "index.html#home"]').text('الرئيسية');
         $('a[href = "index.html#features"]').text('المميزات'); 
-        $('a[href = "index.html#about"]').text('تعرف علينا');
+        $('a[href = "index.html#about"]').text('   من نحن');
         $('a[href = "index.html#get"]').text('الحصول على التطبيق');
         $('a[href = "index.html#contact"]').text('تواصل معنا');
         $('a[href = "index.html#blog"]').text('  مقالات');
