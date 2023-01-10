@@ -251,8 +251,7 @@ sel.addEventListener('click', () => {
         $('.custome').addClass('me-auto');
 
         $('a[href = "#home"]').text('الرئيسية');
-        $('a[href = "#features"]').text('المميزات');
-        $('a[href = "#screenshots"]').text('اللقطات');
+        $('a[href = "#features"]').text('المميزات'); 
         $('a[href = "#about"]').text('تعرف علينا');
         $('a[href = "#get"]').text('الحصول على التطبيق');
         $('a[href = "#contact"]').text('تواصل معنا');
@@ -260,8 +259,7 @@ sel.addEventListener('click', () => {
 
         /**last update add #contact and blog En nav  */
         $('a[href = "index.html#home"]').text('الرئيسية');
-        $('a[href = "index.html#features"]').text('المميزات');
-        $('a[href = "index.html#screenshots"]').text('اللقطات');
+        $('a[href = "index.html#features"]').text('المميزات'); 
         $('a[href = "index.html#about"]').text('تعرف علينا');
         $('a[href = "index.html#get"]').text('الحصول على التطبيق');
         $('a[href = "index.html#contact"]').text('تواصل معنا');
@@ -301,7 +299,7 @@ sel.addEventListener('click', () => {
         $('.feature span').css({ 'marginRight': '0px', 'marginLeft': '14px' })
         $('.features .main-title h5').text('المميزات');
         $('.features .main-title h2').text('نسوي كذا وأكثر');
-        $('.feature .one').text('اضافة منتجاتك و رفع صور لها مع عرض فيديو يشرح منتجك و طريقة عملك');
+        $('.feature .one').text('إضافة  منتجاتك و رفع صور لها مع عرض فيديو يشرح منتجك و طريقة عملك');
         $('.feature .two').html('اختيار البيع أو الشراء للمنتجات بالجملة أو التجزئة');
         $('.feature .three').text('‌وضع الشروط الخاصة بك في عمليات البيع والشراء');
         $('.feature .four').text('تسويق كامل لجميع منتجاتك طوال السنة لمساعدتك  على بيع منتجاتك');
@@ -319,8 +317,8 @@ sel.addEventListener('click', () => {
 
         $('.about').attr('dir', 'rtl');
         $('.about h5').text('من نحن ؟');
-        $('.about h2').text('عن زاري اكسبريي  ');
-        $('.about p').text(`  زاري اكسبريس ، هي أحد مشروعات شركة زاري وهي شركة مصرية سعودية ، تقدم خدمات تكنولوجية لتنمية القطاع التجاري في مصر والسعودية وقريباً في دول الخليج، و متواجدة منذ عام 2014 و من خلالنا يمكنك بيع و شراء المنتجات و الموارد بدون أي عمولة`);
+        $('.about h2').text('عن زاري اكسبرس  ');
+        $('.about p').text(`  زاري اكسبريس ، هي إحدى مشروعات شركة زاري وهي شركة مصرية سعودية ، تقدم خدمات تكنولوجية لتنمية القطاع التجاري في مصر والسعودية وقريباً في دول الخليج، و متواجدة منذ عام 2014 و من خلالنا يمكنك بيع و شراء المنتجات و الموارد بدون أي عمولة`);
 
         // .................................................
 
@@ -367,7 +365,7 @@ sel.addEventListener('click', () => {
         $('.label__email').text('البريد الالكتروني');
         $('.label__company').text('اسم الشركه');
         $('.label__message').text('اترك رساله');
-        $('.btn__message').text('  إرسل رساله');
+        $('.btn__message').text('  ارسلرساله');
 
         // Blog Ar 
         $('#rowData').attr('dir', 'rtl');
