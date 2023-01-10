@@ -112,7 +112,8 @@ sel.addEventListener('click', () => {
 
         $('a[href = "#home"]').text('Home'); 
         $('a[href = "#features"]').text('Features');
-        $('a[href = "#screenshots"]').text('Screenshots');
+        // $('a[href = "#screenshots"]').text('Screenshots');
+
         $('a[href = "#about"]').text('About Us');
         $('a[href = "#get"]').text('Get Our App');
 
@@ -123,7 +124,7 @@ sel.addEventListener('click', () => {
         // blogsDetailes page handel ar & en 
         $('a[href = "index.html#home"]').text('Home');
         $('a[href = "index.html#features"]').text('Features');
-        $('a[href = "index.html#screenshots"]').text('Screenshots');
+        // $('a[href = "index.html#screenshots"]').text('Screenshots');
         $('a[href = "index.html#about"]').text('About Us');
         $('a[href = "index.html#get"]').text('Get Our App');
         $('a[href = "index.html#contact"]').text('Contact Us');
