@@ -133,7 +133,7 @@ sel.addEventListener('click', () => {
         // ...............................
 
         $('header').attr('dir', 'ltr');
-        $('.caption h1').text('Save your time and money')
+        $('.caption h1').text(`Imports and exports help nations' economies thrive.`)
         $('.caption p').text('To assist Arab countries in progressing and prospering, as well as to spread our Arab products throughout the world, we created this app that will facilitate trade between manufacturer and importer and provide them with a variety of features to assist them in trading and investing in our Arab products.');
         $('.home .vectors .vector').css('marginTop', '0px');
         $('.home .buttons .special-m').html(`<i
@@ -182,8 +182,8 @@ sel.addEventListener('click', () => {
         // ................................................
 
         $('.about').attr('dir', 'ltr');
-        $('.about h5').text('About us');
-        $('.about h2').text('About Zari on time...');
+        $('.about h5').text('Who We Are?  ');
+        $('.about h2').text('About Zari Express');
         $('.about p').text('An application that provides various reservation services for hospitals, salons, restaurants, banks, and others... In Saudi Arabia, Egypt, and soon in the GCC Countries, and you can see all the offers and coupons while you are at home.');
 
         // .................................................
@@ -207,8 +207,7 @@ sel.addEventListener('click', () => {
         // ...................................................
 
         $('.footer').attr('dir', 'ltr')
-        $('.logo-footer p').text(`Zari On Time it’s an application for booking appointments with service and product providers
-            to preserve the time of the customer and the facility.`);
+        $('.logo-footer p').text(` It is an application that improves and facilitates trade between Arab countries by allowing easy import and export.`);
         $('.logo-footer h5').text('Follow us ');
         $('.navigate .first-navigate').text('navigate');
         $('.navigate .contact').text('Contact us');
@@ -320,8 +319,8 @@ sel.addEventListener('click', () => {
 
         $('.about').attr('dir', 'rtl');
         $('.about h5').text('من نحن ؟');
-        $('.about h2').text('عن Zari On Time');
-        $('.about p').text(`تطبيق يهتم بتقديم خدمات الحجز المتنوعة مستشفيات، صالونات، مطاعم، بنوك وغيرها.. في المملكة العربية السعودية ومصر وقريباً في دول الخليج، وتقدر تشوف كل العروض والكوبونات وأنت ببيتك.`);
+        $('.about h2').text('عن زاري اكسبريي  ');
+        $('.about p').text(`  زاري اكسبريس ، هي أحد مشروعات شركة زاري وهي شركة مصرية سعودية ، تقدم خدمات تكنولوجية لتنمية القطاع التجاري في مصر والسعودية وقريباً في دول الخليج، و متواجدة منذ عام 2014 و من خلالنا يمكنك بيع و شراء المنتجات و الموارد بدون أي عمولة`);
 
         // .................................................
 
@@ -343,7 +342,7 @@ sel.addEventListener('click', () => {
 
         // ...................................................
         $('.footer').attr('dir', 'rtl')
-        $('.logo-footer p').text('هو تطبيق لحجز المواعيد مع مزودي الخدمة والمنتجات للحفاظ علي وقت العميل والمنشأة.');
+        $('.logo-footer p').text('  هو تطبيق لتحسين وتسهيل التجارة بين البلدان العربية من خلال الاستيراد والتصدير بدون بذل اي مجهود   ');
         $('.logo-footer h5').text('تابعنــــا');
         $('.navigate .first-navigate').text('التنقل');
         $('.navigate .contact').text('تواصل معنــا');
@@ -420,7 +419,7 @@ async function sendMessage() {
             Message: message.value,
         } 
         
-        let response = await fetch("https://zariontime.com/api/web/contactus",{
+        let response = await fetch("https://zariexpress.com/api/web/contactus",{
             method: "POST", 
             body: data
             } ).then(res => {
@@ -433,7 +432,7 @@ async function sendMessage() {
             });
             console.log(response);  
     }else{
-        alert('اطرع بره')
+        alert(' Please enter all data  ')
     }
  
 }
