@@ -365,7 +365,7 @@ sel.addEventListener('click', () => {
         $('.label__email').text('البريد الالكتروني');
         $('.label__company').text('اسم الشركه');
         $('.label__message').text('اترك رساله');
-        $('.btn__message').text('  ارسلرساله');
+        $('.btn__message').text('  ارسل رساله');
 
         // Blog Ar 
         $('#rowData').attr('dir', 'rtl');
