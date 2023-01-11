@@ -416,7 +416,7 @@ async function sendMessage() {
             MessagePhone: phone.value,
             MessageSubject: companyname.value,
             MessageText: message.value,
-            MessageSource: "EXPRESS",
+            MessageSource: "ONTIME",
         }
 
         let response = await fetch("https://zarimain.online/messages/public/api/message", {
