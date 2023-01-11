@@ -411,14 +411,15 @@ async function sendMessage() {
     console.log('test');
     if (usernameValidation() == true && compVali() == true && phoneVali() == true && emailVali() == true) {
         let data = {
-            UserName: userName.value,
-            Phone: phone.value,
-            Email: email.value,
-            Company: companyname.value,
-            Message: message.value,
+            MessageName: userName.value,
+            MessageEmail: email.value,
+            MessagePhone: phone.value,
+            MessageSubject: companyname.value,
+            MessageText: message.value,
+            MessageSource: "EXPRESS",
         }
 
-        let response = await fetch("https://zariexpress.com/api/web/contactus", {
+        let response = await fetch("https://zarimain.online/messages/public/api/message", {
             method: "POST",
             body: data
         }).then(res => {
