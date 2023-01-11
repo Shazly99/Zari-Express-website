@@ -916,13 +916,17 @@ textarea{
     width: 70%;
     text-align: center;
     margin: auto;
+} 
+.test .caption p{ 
+    color: rgb(142, 141, 141) !important; 
+    font-size: 20px !important;
 }
 @media screen and (max-width:1000px) {
     .test{ 
         width: 95% !important;
     }
 } 
-
+ 
 @media screen and (max-width:700px) {
     .test{  
         margin-top: 100px ; 
