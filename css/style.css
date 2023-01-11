@@ -936,6 +936,21 @@ textarea{
         font-size: 14px !important;
     }
 } 
+
+@media screen and (max-width:400px) {
+    .test{  
+        width: 75% !important;
+        margin-top: 100px ; 
+    }
+    .test .caption h1{  
+        margin-bottom: 0px !important;
+        padding-top: 2rem !important;
+        font-size: 16px !important;
+    }
+    .test .caption p{ 
+        font-size: 14px !important;
+    }
+} 
 .test .caption .ext-capitalize{
     color:rgb(216, 33, 33) !important;
 }
