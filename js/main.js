@@ -390,13 +390,13 @@ function toggleTrailer() {
 let btn = document.querySelector('.modal-btn');
 let closeBtb = document.querySelector('.close');
 
-btn.addEventListener('click', () => {
-    toggleTrailer();
-});
+// btn.addEventListener('click', () => {
+//     toggleTrailer();
+// });
 
-closeBtb.addEventListener('click', () => {
-    toggleTrailer();
-});
+// closeBtb.addEventListener('click', () => {
+//     toggleTrailer();
+// });
 
 
 

@@ -5,10 +5,15 @@
 
 body {
     font-family: 'Roboto', sans-serif;
-    background-color: #F5F5F5;
+    background-color: #000000;
     overflow: hidden;
 }
-
+h2,h4 {
+    color: white !important;
+}
+label, p{
+    color: #ACACAC !important;
+}
 #ready {
     text-align: center;
     z-index: 99999;
@@ -51,7 +56,8 @@ img {
 
 /* navbar */
 .navbar {
-    box-shadow: 0px 4px 6px rgba(147, 147, 147, 0.26);
+    box-shadow: 0px 4px 6px rgba(41, 40, 40, 0.26);
+    background-color: #000 !important;
 }
 
 .navbar .navbar-toggler {
@@ -753,8 +759,8 @@ img {
 /* last update CONTACT US */
 
 .contact .container {
-    box-shadow: 0 0 5px #ddd;
-    background-color: #FFFFFF;
+    box-shadow: 0 0 3px #ddd; 
+    background-color: #000;
     width: 50%;
     display: flex;
     justify-content: center;
@@ -762,7 +768,16 @@ img {
     flex-direction: column;
     border-radius: 10px;
 }
-
+.contact .container input{
+    background-color: rgba(22, 22, 22, 0.63);
+    border: none !important;
+    color: #ACACAC !important; 
+}
+textarea{
+    background-color: rgba(22, 22, 22, 0.63);
+    border: none !important;
+    color: #ACACAC !important; 
+}
 @media screen and (max-width: 992px) {
     .contact .container {
         width: 100% !important;
@@ -877,4 +892,50 @@ img {
     .blog .bg-light {
         width:100% !important;
 }
+}
+
+
+
+/* Video */
+.overlay{ 
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+} 
+.test{
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0; 
+    display:flex;
+    justify-content:center;
+    align-items: center;
+    width: 70%;
+    text-align: center;
+    margin: auto;
+}
+@media screen and (max-width:1000px) {
+    .test{ 
+        width: 95% !important;
+    }
+} 
+
+@media screen and (max-width:700px) {
+    .test{  
+        margin-top: 100px ; 
+    }
+    .test .caption h1{  
+        margin-bottom: 0px !important;
+        padding-top: 4rem !important;
+        font-size: 16px !important;
+    }
+    .test .caption p{ 
+        font-size: 14px !important;
+    }
+} 
+.test .caption .ext-capitalize{
+    color:rgb(216, 33, 33) !important;
 }
