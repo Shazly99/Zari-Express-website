@@ -4,7 +4,7 @@ const id = urlParams.get('id')
 console.log(id);
 
 (async function () {
-    let response = await fetch(`https://zariontime.com/api/web/blog/${id}`)
+    let response = await fetch(`https://zariexpress.com/api/web/blog/${id}`)
     let responseData = await response.json();
     Blogs=responseData.Blog
     console.log(Blogs)

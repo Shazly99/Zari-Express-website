@@ -470,17 +470,16 @@ function compVali() {
 
 // blog get data
 (async function () {
-    let response = await fetch("https://zariontime.com/api/web/home")
+    let response = await fetch("https://zariexpress.com/api/web/home")
     let responseData = await response.json();
     Blogs = responseData.Blogs;
     displayBlogEn();
     console.log(Blogs);
-    if (Blogs == null) {
+    if (Blogs.length === 0) {
         console.log('فاضي');
         document.getElementById("blog").classList.add("d-none");
         document.getElementById("navBlog").classList.add("d-none");
     } else {
-
         console.log('مليان');
         document.getElementById("blog").classList.add("d-block");
         document.getElementById("navBlog").classList.add("d-block");
