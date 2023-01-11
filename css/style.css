@@ -939,12 +939,12 @@ textarea{
 
 @media screen and (max-width:400px) {
     .test{  
-        width: 75% !important;
+        width: 85% !important;
         margin-top: 100px ; 
     }
     .test .caption h1{  
         margin-bottom: 0px !important;
-        padding-top: 2rem !important;
+        padding-top: 1rem !important;
         font-size: 16px !important;
     }
     .test .caption p{ 
