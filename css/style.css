@@ -11,7 +11,7 @@ body {
 h2,h4 {
     color: white !important;
 }
-label, p{
+label,.para-2{
     color: #ACACAC !important;
 }
 #ready {
@@ -164,6 +164,7 @@ img {
 .custome .language,
 .language i {
     transition: all 0.25s;
+    color: white !important;
 }
 
 .custome .language:hover {
@@ -174,7 +175,10 @@ img {
 .custome .language:hover h5 {
     color: #fff !important;
 }
-
+.language2{
+    color: white !important;
+    font-weight: 900;
+}
 /* .custome .language:hover option[value] {
     color: var(--mainColor) !important;
 } */
@@ -184,7 +188,7 @@ img {
 }
 
 .custome .language button {
-    color: var(--mainColor);
+    color: #fff;
     border: none;
     outline: none;
     background-color: transparent;
@@ -629,7 +633,9 @@ img {
     color: #fff;
     font-weight: 600;
 }
-
+.footer{
+    box-shadow: 0 0 3px #ddd;
+}
 .footer p {
     color: #ACACAC;
     letter-spacing: 1px;
