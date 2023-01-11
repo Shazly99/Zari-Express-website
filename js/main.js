@@ -110,7 +110,7 @@ sel.addEventListener('click', () => {
         $('.collapse .navbar-nav').removeClass('ms-auto');
         $('.custome').removeClass('me-auto');
 
-        $('a[href = "#home"]').text('Home'); 
+        $('a[href = "#home"]').text('Home');
         $('a[href = "#features"]').text('Features');
         // $('a[href = "#screenshots"]').text('Screenshots');
 
@@ -252,7 +252,7 @@ sel.addEventListener('click', () => {
         $('.custome').addClass('me-auto');
 
         $('a[href = "#home"]').text('الرئيسية');
-        $('a[href = "#features"]').text('المميزات'); 
+        $('a[href = "#features"]').text('المميزات');
         $('a[href = "#about"]').text('   من نحن');
         $('a[href = "#get"]').text('الحصول على التطبيق');
         $('a[href = "#contact"]').text('تواصل معنا');
@@ -260,7 +260,7 @@ sel.addEventListener('click', () => {
 
         /**last update add #contact and blog En nav  */
         $('a[href = "index.html#home"]').text('الرئيسية');
-        $('a[href = "index.html#features"]').text('المميزات'); 
+        $('a[href = "index.html#features"]').text('المميزات');
         $('a[href = "index.html#about"]').text('   من نحن');
         $('a[href = "index.html#get"]').text('الحصول على التطبيق');
         $('a[href = "index.html#contact"]').text('تواصل معنا');
@@ -400,7 +400,7 @@ closeBtb.addEventListener('click', () => {
 
 
 
-/** contact us send message */ 
+/** contact us send message */
 let userName = document.getElementById('label__name');
 let phone = document.getElementById('label__phone');
 let email = document.getElementById('label__email');
@@ -409,72 +409,64 @@ let message = document.getElementById('label__message');
 
 async function sendMessage() {
     console.log('test');
-    if (usernameValidation()==true && compVali()==true&& phoneVali()==true&& emailVali()==true) {
+    if (usernameValidation() == true && compVali() == true && phoneVali() == true && emailVali() == true) {
         let data = {
             UserName: userName.value,
             Phone: phone.value,
             Email: email.value,
             Company: companyname.value,
             Message: message.value,
-        } 
-        
-        let response = await fetch("https://zariexpress.com/api/web/contactus",{
-            method: "POST", 
+        }
+
+        let response = await fetch("https://zariexpress.com/api/web/contactus", {
+            method: "POST",
             body: data
-            } ).then(res => {
-                console.log(res);
-            if (res.status==200) {
-                alert('The message has been sent successfully!')  
-            }else{
-                alert('Oops samting wrang!')  
+        }).then(res => {
+            console.log(res);
+            if (res.status == 200) {
+                alert('The message has been sent successfully!')
+            } else {
+                alert('Oops samting wrang!')
             }
-            });
-            console.log(response);  
-    }else{
+        });
+        console.log(response);
+    } else {
         alert(' Please enter all data  ')
     }
- 
+
 }
-function usernameValidation(){ 
-    if ( userName.value!="") 
-    {
-       return true;
+function usernameValidation() {
+    if (userName.value != "") {
+        return true;
     }
-    else
-    { 
-       return false
+    else {
+        return false
     }
-}  
-function phoneVali(){ 
-    if ( phone.value!="") 
-    {
-       return true;
+}
+function phoneVali() {
+    if (phone.value != "") {
+        return true;
     }
-    else
-    { 
-       return false
+    else {
+        return false
     }
-} 
-function emailVali(){ 
-    if ( email.value!="") 
-    {
-       return true;
+}
+function emailVali() {
+    if (email.value != "") {
+        return true;
     }
-    else
-    { 
-       return false
+    else {
+        return false
     }
-} 
-function compVali(){ 
-    if ( companyname.value!="") 
-    {
-       return true;
+}
+function compVali() {
+    if (companyname.value != "") {
+        return true;
     }
-    else
-    { 
-       return false
+    else {
+        return false
     }
-} 
+}
 
 // blog get data
 (async function () {
@@ -483,6 +475,14 @@ function compVali(){
     Blogs = responseData.Blogs;
     displayBlogEn();
     console.log(Blogs);
+    if (Blogs == null) {
+        console.log('فاضي');
+        document.getElementById("blog").classList.add("d-none");
+    } else {
+
+        console.log('مليان');
+        document.getElementById("blog").classList.add("d-block");
+    }
 })();
 
 function displayBlogEn() {
