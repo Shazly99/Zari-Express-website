@@ -422,9 +422,7 @@ async function sendMessage() {
        success: function (result) {
            alert(result.MessageAr);
        }
-   });
-
-
+   }); 
 }
 function usernameValidation() {
     if (userName.value != "") {
